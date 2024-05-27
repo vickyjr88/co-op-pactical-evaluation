@@ -23,15 +23,6 @@ db.serialize(() => {
         type TEXT, -- 'income' or 'expense'
         date TEXT
     )`);
-
-  db.run(`CREATE TABLE IF NOT EXISTS goals (
-        id INTEGER PRIMARY KEY,
-        userId INTEGER,
-        goalName TEXT,
-        targetAmount REAL,
-        currentAmount REAL DEFAULT 0,
-        deadline TEXT
-    )`);
 });
 
 export default db;
