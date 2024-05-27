@@ -10,6 +10,18 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhd
   "type": "earn"
 } 
 
+####
+
+POST http://localhost:3500/api/transactions
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxMzI2MjMyMn0.B_mOkYYb7m_8-nisR64FnLxYkcgqbcryLIJd1Y1g7rE
+
+{
+  "amount": "10",
+  "category": "Eat out",
+  "type": "spend"
+} 
+
 #####
 
 GET http://localhost:3500/api/transactions
